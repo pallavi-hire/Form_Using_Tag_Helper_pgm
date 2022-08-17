@@ -1,0 +1,53 @@
+﻿@model Form_Using_Tah_Helper_pgm.Models.Employee
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h1> index</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 mx-auto">
+            
+            <form asp-action="Index" asp-controller="Home" method="post">
+                <label>Name: </label>
+                <input asp-for="Name" placeholder="Enter your name" class="form-control"/>
+                <br />
+                <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
+                    <option value="">select gender</option>
+                </select>
+                <br />
+
+                <input asp-for="Age" placeholder="Enter your age" class="form-control" />
+                <br />
+                <input asp-for="Desg" placeholder="Enter your desg" class="form-control" />
+                <br />
+                <input asp-for="salary" placeholder="Enter your salary" class="form-control" />
+                <br />
+                <label> Married</label>
+                <br />
+                <label> Yes </label>
+                <input type="radio" asp-for="Married" value="Yes"/>
+
+                <label> No </label>
+                <input type="radio" asp-for="Married" value="No" />
+                <br />
+                <input type= "submit" value="Submit" class="btn btn-primary btn-block" />
+
+            </form>
+              
+        </div>
+    </div>
+</div>
+
+
+
