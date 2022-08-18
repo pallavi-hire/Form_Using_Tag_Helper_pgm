@@ -11,37 +11,78 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<h1> index</h1>
 
 
-<div class="container">
+
+<div class="container" >
     <div class="row">
         <div class="col-sm-4 mx-auto">
-            
+            <div style="color:red" asp-validation-summary="All">
+
+            </div>
+            <h1 class="jumbotron bg-primary text-center" > sign up form </h1>
             <form asp-action="Index" asp-controller="Home" method="post">
+                
                 <label>Name: </label>
-                <input asp-for="Name" placeholder="Enter your name" class="form-control"/>
+                <input asp-for="Name" placeholder="Enter your name" class="form-control" />
+                <span style="color:red;" asp-validation-for="Name"> </span>
                 <br />
+                
+                
+                <label>Gender: </label>
                 <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
                     <option value="">select gender</option>
                 </select>
+                <span style="color:red;" asp-validation-for="Gender"> </span>
+                <br />
+                
+                
+                <label>Age: </label>
+                <input asp-for="Age" placeholder="Enter your age" class="form-control" />
+                <span style="color:red;" asp-validation-for="Age"> </span>
+                <br />
+                
+                
+                <label>password: </label>
+                <input asp-for="Password" placeholder="Enter your password" class="form-control" />
+                <span style="color:red;" asp-validation-for="Password"> </span>
+                <br />
+                    
+
+                
+                <label>ConfirmPassword: </label>
+                <input asp-for="ConfirmPassword" placeholder="Enter your password" class="form-control" />
+                <span style="color:red;" asp-validation-for="ConfirmPassword"> </span>
                 <br />
 
-                <input asp-for="Age" placeholder="Enter your age" class="form-control" />
-                <br />
+                <label>Designation: </label>
                 <input asp-for="Desg" placeholder="Enter your desg" class="form-control" />
                 <br />
+
+
+
+                <label>Email: </label>
+                <input asp-for="Email" placeholder="Enter your email" class="form-control" />
+                 <span style="color:red;" asp-validation-for="Email"> </span>
+
+                <br />
+                
+                <label>Salary: </label>
                 <input asp-for="salary" placeholder="Enter your salary" class="form-control" />
                 <br />
+                
+                
                 <label> Married</label>
                 <br />
                 <label> Yes </label>
                 <input type="radio" asp-for="Married" value="Yes"/>
-
                 <label> No </label>
                 <input type="radio" asp-for="Married" value="No" />
                 <br />
-                <input type= "submit" value="Submit" class="btn btn-primary btn-block" />
+                
+
+
+                <input type="submit" value="Submit" class="btn-primary" />
 
             </form>
               

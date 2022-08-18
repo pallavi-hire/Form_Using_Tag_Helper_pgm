@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 
     <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
-    @*<link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <a href="~/lib/twitter-bootstrap/css/bootstrap.css.map">~/lib/twitter-bootstrap/css/bootstrap.css.map</a>
-    <a href="~/lib/twitter-bootstrap/css/bootstrap.min.css.map">~/lib/twitter-bootstrap/css/bootstrap.min.css.map</a>*@
+    
 </head>
 <body>
     <header>
@@ -39,33 +37,24 @@
             @RenderBody()
         </main>
     </div>
+    
+    <div class="clear-fix"></div> 
 
-    <footer class="border-top footer text-muted">
+
+   @* <footer class="border-top footer text-muted" style="margin-top:25%" >
         <div class="container">
             &copy; 2022 - Form_Using_Tah_Helper_pgm - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer>*@
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 
-    <script src="~/lib/jquery/jquery.js"></script>
-   @* <script src="~/lib/jquery/jquery.min.js"></script>
-    <script src="~/lib/jquery/jquery.slim.js"></script>
-    <script src="~/lib/jquery/jquery.slim.min.js"></script>
-    <a href="~/lib/jquery/jquery.min.map">~/lib/jquery/jquery.min.map</a>
-    <a href="~/lib/jquery/jquery.slim.min.map">~/lib/jquery/jquery.slim.min.map</a>*@
-
-
-   @* <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/lib/jquery/jquery.js"></script> 
     <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
-    @*<script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
-    <a href="~/lib/twitter-bootstrap/js/bootstrap.bundle.js.map">~/lib/twitter-bootstrap/js/bootstrap.bundle.js.map</a>
-    <a href="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js.map">~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js.map</a>
-    <a href="~/lib/twitter-bootstrap/js/bootstrap.js.map">~/lib/twitter-bootstrap/js/bootstrap.js.map</a>
-    <a href="~/lib/twitter-bootstrap/js/bootstrap.min.js.map">~/lib/twitter-bootstrap/js/bootstrap.min.js.map</a>*@
+   
 </body>
 
 

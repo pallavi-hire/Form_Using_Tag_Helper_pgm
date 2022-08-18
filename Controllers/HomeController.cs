@@ -19,6 +19,30 @@ namespace Form_Using_Tah_Helper_pgm.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(Employee e)
+        {
+            return View();
+        }
+        //public string Index(Employee e)
+        //{ 
+        //    if (ModelState.IsValid)
+        //    {
+        //        return "Name =  " + e.Name + " Gender =   " + e.Gender+ "Age =   " +e.Age+  "desg=  "  +e.Desg+   "salary=   " +e.salary+ "married =   " +e.Married;
+        //    }
+        //    else
+        //    {
+        //        return "validation failed";
+        //    }
+        //}
+
+        //public string Details(int id, string name)
+        //{
+        //    return "id =  " + id + " name =   " + name;
+        //}
+
+
+
         public IActionResult Privacy()
         {
             return View();
